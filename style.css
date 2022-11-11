@@ -3,9 +3,42 @@ body {
     margin: 0;
 }
 
+.background-img{
+    background-image: url('img/brainbg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 25%;
+}
+
 .quiz-card {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.container-size {
+    width: 800px;
+    height: 500px;
+}
+
+.font-size-text {
+    font-size: 24px;
+}
+
+.button-position {
+    margin-top: 146px;
+    margin-bottom: 12px;
+    margin-left: 55%;
+    padding-left: 30px;
+    padding-right: 20px;
+    background-color: #FF4D0F;
+    border-color: #FF4D0F;
+}
+
+.button-position img {
+    height: 16px;
+    width: 16px;
+    margin-bottom: 2px;
+    margin-left: 15px;
 }
