@@ -23,13 +23,27 @@ body {
     width: 90px;
     height: auto;
     margin-left: 35px;
+    margin-right: 35px;
 }
 
 .background-img {
     background-image: url('img/brainbg.jpg');
     background-size: cover;
     background-position: center;
+    height: 100%;
     border-radius: 10px;
+}
+
+.background-question-container {
+    background-color: rgba(247,247,247,255);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 15%;
+    padding-right: 15%;
+    height: 100%;
+}
+
+.top-padding {
     padding-top: 18%;
 }
 
@@ -49,6 +63,11 @@ body {
     border-color: rgb(231, 231, 231);
     border-radius: 10px;
 }
+
+#card-body {
+    width: 100%;
+}
+
 
 .font-size-text {
     font-size: 20px;
@@ -103,4 +122,33 @@ body {
 
 .flex-menu-links:hover {
     color: white;
+}
+
+.flex-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+h4 {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.card-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+    padding: 5px;
+}
+
+.letter-div {
+    background-color: #d6d6d6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
 }
