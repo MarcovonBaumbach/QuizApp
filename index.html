@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body onload="init()">
+<body onload="init('HTML')">
     <!--Header-->
     <nav class="navbar bg-header">
         <div class="container-fluid">
@@ -22,10 +22,10 @@
           <div class="card-menu">
             <img class="img-logo" src="img/logo.png" class="img-fluid rounded-start">
             <nav class="nav-flex">
-                <div class="flex-menu-links"><p class="vertical-bar">|</p><a class="menu-links" href="#">HTML</a></div>
-                <div class="flex-menu-links"><p class="vertical-bar">|</p><a class="menu-links" href="#">CSS</a></div>                
-                <div class="flex-menu-links"><p class="vertical-bar">|</p><a class="menu-links" href="#">JS</a></div>               
-                <div class="flex-menu-links"><p class="vertical-bar">|</p><a class="menu-links" href="#">JAVA</a></div>
+                <div class="flex-menu-links" onclick="init('HTML')"><p class="vertical-bar">|</p><p class="menu-links">HTML</p></div>
+                <div class="flex-menu-links" onclick="init('CSS')"><p class="vertical-bar">|</p><p class="menu-links">CSS</p></div>                
+                <div class="flex-menu-links" onclick="init('JS')"><p class="vertical-bar">|</p><p class="menu-links">JS</p></div>               
+                <div class="flex-menu-links" onclick="init('JAVA')"><p class="vertical-bar">|</p><p class="menu-links">JAVA</p></div>
             </nav>
           </div>
           <div id="card-body">

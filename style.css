@@ -101,10 +101,12 @@ body {
     color: #AEAEB0;
     text-decoration: none;
     font-size: 20px;
+    transition: all 75ms ease-in-out;
 }
 
 .menu-links:hover {
     color: white;
+    transition: all 75ms ease-in-out;
 }
 
 .vertical-bar {
@@ -118,10 +120,13 @@ body {
     display: flex;
     color: #27355C;
     gap: 30px;
+    transition: all 75ms ease-in-out;
 }
 
 .flex-menu-links:hover {
     color: white;
+    cursor: pointer;
+    transition: all 75ms ease-in-out;
 }
 
 .flex-display {
@@ -151,4 +156,27 @@ h4 {
     padding-left: 15px;
     padding-right: 15px;
 
+}
+
+.card-style:hover {
+    cursor: pointer;
+    box-shadow: 2px 0px 7px 3px rgba(0,0,0,0.12);
+}
+
+.bg-green {
+    background-color: #b7f799;
+}
+
+.bg-red {
+    background-color: #ffa3a4;
+}
+
+.bg-green-letter {
+    background-color: #4dbf18;
+    color: white;
+}
+
+.bg-red-letter {
+    background-color: #fb161b;
+    color: white;
 }
