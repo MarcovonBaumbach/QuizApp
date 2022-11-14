@@ -83,6 +83,10 @@ body {
     border-color: #FF4D0F;
 }
 
+.color-orange {
+    color: #FF4D0F;
+}
+
 .button-position img {
     height: 16px;
     width: 16px;
@@ -179,4 +183,16 @@ h4 {
 .bg-red-letter {
     background-color: #fb161b;
     color: white;
+}
+
+.result-image {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+}
+
+h5 {
+    padding-bottom: 30px;
 }
