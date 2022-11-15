@@ -68,7 +68,6 @@ body {
     width: 100%;
 }
 
-
 .font-size-text {
     font-size: 20px;
     margin-top: 10px
@@ -195,4 +194,12 @@ h4 {
 
 h5 {
     padding-bottom: 30px;
+}
+
+.trophy{
+    margin-top: 50px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
 }
