@@ -198,6 +198,9 @@ let pageCounter;
 let question;
 let currentDeck;
 let points;
+let param1;
+let param2;
+let param3;
 
 //Loading question-deck by selection in menu
 function init(questionDeck) {
@@ -319,5 +322,24 @@ document.getElementById('card-body').innerHTML = `
     </div>     
     <img class="trophy" src="img/trophy.png">
 `;
+}
+
+//Change menu font color to white
+function selectMENU(par1, par2, par3) {
+
+  param1 = par1;
+  param2 = par2;
+  param3 = par3;
+  
+  document.getElementById(par1).classList.add('flex-menu-hover');
+  document.getElementById(par2).classList.add('flex-menu-hover');
+  document.getElementById(par3).classList.add('flex-menu-hover');
+}
+
+//Change menu font color to default
+function leaveMENU() {
+  document.getElementById(param1).classList.remove('flex-menu-hover');
+  document.getElementById(param2).classList.remove('flex-menu-hover');
+  document.getElementById(param3).classList.remove('flex-menu-hover');
 }
 

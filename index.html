@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body onload="init('HTML')">
-    <!--TODO: JAVA Fragenkatalog erstellen, responsive machen-->
+<body onload="init('HTML'); selectMENU('menu1HTML', 'menu2HTML', 'menu3HTML')">
+    <!--TODO: Menü hover verbessern, responsive machen-->
     <nav class="navbar bg-header">
         <div class="container-fluid">
           <span class="navbar-brand mb-0 h1">QuizApp</span>
@@ -22,10 +22,18 @@
           <div class="card-menu">
             <img class="img-logo" src="img/logo.png" class="img-fluid rounded-start">
             <nav class="nav-flex">
-                <div class="flex-menu-links" onclick="init('HTML')"><p class="vertical-bar">|</p><p class="menu-links">HTML</p></div>
-                <div class="flex-menu-links" onclick="init('CSS')"><p class="vertical-bar">|</p><p class="menu-links">CSS</p></div>                
-                <div class="flex-menu-links" onclick="init('Javascript')"><p class="vertical-bar">|</p><p class="menu-links">JS</p></div>               
-                <div class="flex-menu-links" onclick="init('JAVA')"><p class="vertical-bar">|</p><p class="menu-links">JAVA</p></div>
+                <div id="menu1HTML" class="flex-menu-links" onclick="init('HTML'); leaveMENU(); selectMENU('menu1HTML', 'menu2HTML', 'menu3HTML')"> 
+                  <span id="menu2HTML" class="vertical-bar">|</span><p id="menu3HTML" class="menu-links">HTML</p>
+                </div>
+                <div id="menu1CSS" class="flex-menu-links" onclick="init('CSS'); leaveMENU(); selectMENU('menu1CSS', 'menu2CSS', 'menu3CSS')">
+                  <span id="menu2CSS" class="vertical-bar">|</span><p id="menu3CSS" class="menu-links">CSS</p>
+                </div>                
+                <div id="menu1JS" class="flex-menu-links" onclick="init('Javascript'); leaveMENU(); selectMENU('menu1JS', 'menu2JS', 'menu3JS')">
+                  <span id="menu2JS" class="vertical-bar">|</span><p id="menu3JS" class="menu-links">JS</p>
+                </div>               
+                <div id="menu1JAVA" class="flex-menu-links" onclick="init('JAVA'); leaveMENU(); selectMENU('menu1JAVA', 'menu2JAVA', 'menu3JAVA')">
+                  <span id="menu2JAVA" class="vertical-bar">|</span><p id="menu3JAVA" class="menu-links">JAVA</p>
+                </div>
             </nav>
           </div>
           <div id="card-body">

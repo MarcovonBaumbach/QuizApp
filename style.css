@@ -101,15 +101,13 @@ body {
 }
 
 .menu-links {
-    color: #AEAEB0;
     text-decoration: none;
     font-size: 20px;
-    transition: all 75ms ease-in-out;
+    color: #AEAEB0;
 }
 
 .menu-links:hover {
     color: white;
-    transition: all 75ms ease-in-out;
 }
 
 .vertical-bar {
@@ -117,19 +115,21 @@ body {
     font-weight: 900;
     margin-left: -1px;
     margin-top: -3px;
+    color: #27355C;
 }
 
 .flex-menu-links {
     display: flex;
-    color: #27355C;
     gap: 30px;
-    transition: all 75ms ease-in-out;
+    width: 100%;
 }
 
 .flex-menu-links:hover {
-    color: white;
     cursor: pointer;
-    transition: all 75ms ease-in-out;
+}
+
+.flex-menu-hover {
+    color: white;
 }
 
 .flex-display {
