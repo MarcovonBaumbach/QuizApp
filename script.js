@@ -151,6 +151,49 @@ let questionsJS = [
   } 
 ];
 
+let questionsJAVA = [
+  {
+      'question': 'Welcher Datentyp wird für Textvariablen benutzt?',
+      'answer_1': 'string',
+      'answer_2': 'txt',
+      'answer_3': 'Text',
+      'answer_4': 'String',
+      'right_answer': 'answer_4'
+  },
+  {
+    'question': 'Wie bestimmt man die länge eines Strings?',
+    'answer_1': 'length()',
+    'answer_2': 'getLength()',
+    'answer_3': 'objSize()',
+    'answer_4': 'size()',
+    'right_answer': 'answer_1'
+  },
+  {
+    'question': 'Wie ändert man einen String in Großbuchstaben?',
+    'answer_1': 'upperCase()',
+    'answer_2': 'toUpperCase()',
+    'answer_3': 'fontSize()',
+    'answer_4': 'toFontSize()',
+    'right_answer': 'answer_2'
+  },
+  {
+    'question': 'Wie kreiert man ein neues Objekt einer Klasse?',
+    'answer_1': 'myClass myObject = new myClass()',
+    'answer_2': 'myObject = new myClass()',
+    'answer_3': 'myClass = new myObject()',
+    'answer_4': 'myObject = new object of myClass()',
+    'right_answer': 'answer_1'
+  },
+  {
+    'question': 'Wie gibt man einen Wert innerhalb einer Methode zurück?',
+    'answer_1': 'result',
+    'answer_2': 'get',
+    'answer_3': 'set',
+    'answer_4': 'return',
+    'right_answer': 'answer_4'
+  }
+];
+
 let pageCounter;
 let question;
 let currentDeck;
