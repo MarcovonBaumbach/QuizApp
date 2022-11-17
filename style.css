@@ -5,6 +5,12 @@ body {
 
 .bg-header {
     background-color: #AEAEB0;
+    border-radius: 10px;
+}
+
+.bg-bar {
+    background-color: #27355C;
+    border-radius: 10px;
 }
 
 .card-menu {
@@ -108,7 +114,7 @@ body {
 .vertical-bar {
     font-size: 20px;
     font-weight: 900;
-    margin-left: -1px;
+    margin-left: -2px;
     margin-top: -3px;
     color: #27355C;
 }
@@ -194,7 +200,7 @@ h5 {
 }
 
 .trophy{
-    margin-top: 50px;
+    margin-top: 20px;
     position: absolute;
     top: 50%;
     right: 0;

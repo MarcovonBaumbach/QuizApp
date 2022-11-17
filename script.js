@@ -207,6 +207,7 @@ function init(questionDeck) {
     document.getElementById('card-body').innerHTML = questionCoverHTML(questionDeck);
     pageCounter = 0;
     points = 0;
+    progressBar();
 }
 
 //determine which Array of Questions should be displayed
@@ -247,6 +248,7 @@ function answer(param) {
 //calling the next page
 function nextPage() {
   pageCounter++;
+  progressBar();
   if(pageCounter < question.length) {
     showCurrentQuestion()
   } else endCardHTML();
@@ -304,7 +306,7 @@ function showCurrentQuestion() {
           </div>
           <div class="flex-display">
             <span>Frage <b>${pageCounter + 1}</b> von <b>${question.length}</b> </span>
-            <button id="next-button" class="btn btn-primary" onclick="nextPage()" type="submit" disabled>Nächste Frage</button>
+            <button id="next-button" class="btn btn-primary" onclick="nextPage()" type="submit" disabled>NEXT PAGE!</button>
           </div>
       </div>
   `;
@@ -341,5 +343,16 @@ function leaveMENU() {
   document.getElementById(param1).classList.remove('flex-menu-hover');
   document.getElementById(param2).classList.remove('flex-menu-hover');
   document.getElementById(param3).classList.remove('flex-menu-hover');
+}
+
+//resetting progress bar if on question deck cover, and moving it forward after each question
+function progressBar() {
+  if (pageCounter == 0){
+    document.getElementById('progress-bar').style = `width: 0%`;
+  } else {
+    let percent = pageCounter/question.length;
+    percent = Math.round(percent * 100);
+    document.getElementById('progress-bar').style = `width: ${percent}%`;
+  }
 }
 
