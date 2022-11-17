@@ -19,25 +19,25 @@ function questionCoverHTML(questionDeck) {
     document.getElementById('card-body').innerHTML = `
     <div class="card-body text-center background-question-container">
             <h4 class="card-title">${question[pageCounter].question}</h4>
-            <div id="answer_1" class="card card-style mb-2" onclick="answer('answer_1')">
+            <div id="answer_1" class="card card-hover card-style mb-2" onclick="answer('answer_1')">
               <div class="card-flex ">
                 <div id="letter-answer_1" class="letter-div"><b>A</b></div>
                 ${question[pageCounter].answer_1}
               </div>
             </div>
-            <div id="answer_2" class="card card-style mb-2" onclick="answer('answer_2')">
+            <div id="answer_2" class="card card-hover card-style mb-2" onclick="answer('answer_2')">
               <div class="card-flex ">
                 <div id="letter-answer_2" class="letter-div"><b>B</b></div>
                 ${question[pageCounter].answer_2}
               </div>
             </div>
-            <div id="answer_3" class="card card-style mb-2" onclick="answer('answer_3')">
+            <div id="answer_3" class="card card-hover card-style mb-2" onclick="answer('answer_3')">
               <div class="card-flex ">
                 <div id="letter-answer_3" class="letter-div"><b>C</b></div>
                 ${question[pageCounter].answer_3}
               </div>
             </div>
-            <div id="answer_4" class="card card-style mb-2" onclick="answer('answer_4')">
+            <div id="answer_4" class="card card-hover card-style mb-2" onclick="answer('answer_4')">
               <div class="card-flex ">
                 <div id="letter-answer_4" class="letter-div"><b>D</b></div>
                 ${question[pageCounter].answer_4}

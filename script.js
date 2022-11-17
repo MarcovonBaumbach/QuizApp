@@ -39,20 +39,33 @@ function questionValidator(id) {
 //checking if right answer is selected and playing audio and changing answer button colors
 function answer(param) {
   buttonDisabled();
+  disableHover();
   if(param == question[pageCounter].right_answer){
+    rightAnswer(param);
+  } else wrongAnswer(param);
+  //enabling Button to proceed to next question
+  document.getElementById('next-button').disabled = false;
+}
+
+function rightAnswer(param) {
     document.getElementById(param).classList.add('bg-green');
     document.getElementById('letter-' + param).classList.add('bg-green-letter');
     SUCCESS_AUDIO.play();
     points++;
-  } else {
+}
+
+function wrongAnswer(param) {
     document.getElementById(param).classList.add('bg-red');
     document.getElementById('letter-' + param).classList.add('bg-red-letter');
     document.getElementById(question[pageCounter].right_answer).classList.add('bg-green');
     document.getElementById('letter-' + question[pageCounter].right_answer).classList.add('bg-green-letter');
     FAIL_AUDIO.play();
+}
+
+function disableHover() {
+  for (let i = 1; i < 5; i++) {
+    document.getElementById(`answer_${i}`).classList.remove('card-hover');
   }
-  //enabling Button to proceed to next question
-  document.getElementById('next-button').disabled = false;
 }
 
 //calling the next page
