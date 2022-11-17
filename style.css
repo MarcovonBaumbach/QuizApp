@@ -264,6 +264,7 @@ h5 {
     }
     .card-flex {
         gap: 16px;
+        font-size: 12px;
     }
     .end-button {
         margin-bottom: 16px;
